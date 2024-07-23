@@ -1,51 +1,48 @@
-# Todo List Uygulaması
+# Todo List Application
 
-Bu proje, React kullanarak basit bir Todo List uygulamasını içerir. Uygulama, kullanıcıların yapılacaklar listesine görev eklemelerine, görevleri düzenlemelerine ve silmelerine olanak tanır. Görevler tarayıcıda saklanır ve sayfa yenilendiğinde korunur.
+This project features a simple Todo List application built with React. Users can add, edit, and delete tasks. Tasks are stored in `localStorage` and persist across page refreshes.
 
-## Özellikler
+## Features
 
-- **Görev Ekleme**: Kullanıcılar yeni görevler ekleyebilir.
-- **Görev Düzenleme**: Var olan görevleri düzenleyebilirsiniz.
-- **Görev Silme**: Görevleri listeye ekledikten sonra silebilirsiniz.
-- **Veri Saklama**: Görevler tarayıcıda localStorage kullanılarak saklanır ve sayfa yenilendiğinde korunur.
+- **Add Task**: Users can add new tasks.
+- **Edit Task**: Users can edit existing tasks.
+- **Delete Task**: Users can delete tasks.
+- **Data Storage**: Tasks are stored in `localStorage`.
 
-## Kurulum
+## Setup
 
-Bu projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
-
-1. **Projeyi Klonlayın**:
+1. **Clone the Repository**:
     ```bash
     git clone https://github.com/ErenAtalayAi/react-todo-app.git
     ```
-2. **Proje Dizini İçine Girin**:
+
+2. **Navigate to the Project Directory**:
     ```bash
-    cd todo-list-uygulamasi
+    cd react-todo-app
     ```
-3. **Bağımlılıkları Yükleyin**:
+
+3. **Install Dependencies**:
     ```bash
     npm install
     ```
-4. **Uygulamayı Başlatın**:
+
+4. **Start the Application**:
     ```bash
     npm start
     ```
 
-Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek uygulamayı görebilirsiniz.
+   Visit [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-## Bileşenler
+## Components
 
 ### `App.js`
 
-Ana uygulama bileşeni, görevlerin listelendiği ve eklenip güncellenebildiği merkezi bileşendir. Görevler `localStorage` kullanılarak saklanır.
+The main application component for managing and displaying tasks.
 
 ### `TodoList.js`
 
-Bu bileşen, görevlerin listesini render eder ve her görev için `TodoItem` bileşenini kullanır.
+Displays the list of tasks.
 
 ### `TodoItem.js`
 
-Bu bileşen, tekil görevleri temsil eder. Görevler üzerinde düzenleme, kaydetme, iptal etme ve silme işlemlerini sağlar.
-
-## Katkıda Bulunma
-
-Bu projeye katkıda bulunmak isterseniz, lütfen bir pull request gönderin. Her türlü geri bildirim ve öneri de memnuniyetle karşılanır.
+Represents individual tasks and provides functionality for editing and deleting.
